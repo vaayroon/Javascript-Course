@@ -67,3 +67,8 @@ document.write((a > b) || (c > d)); // false
 document.write("<br>");
 document.write(!(a > b)); // true
 document.write("<br>");
+
+/* Explain CamelCase
+    CamelCase is a naming convention in which each word within a compound word is capitalized except for the first word.
+    For example: firstName, lastName, etc.
+*/
