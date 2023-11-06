@@ -29,8 +29,20 @@ document.write(fruits[4] + "<br>");
 document.write("Fruits2[15]" + "<br>");
 document.write(fruits2[15] + "<br>");
 
-/* Associative arrays:
-    - JavaScript does not support associative arrays.
-    - You should use objects when you want the element names to be strings (text).
-    - You should use arrays when you want the element names to be numbers.
+/* Associative arrays (json):
+    - Many programming languages support arrays with named indexes.
+    - Arrays with named indexes are called associative arrays (or hashes).
+    - JavaScript does not support arrays with named indexes.
+    - In JavaScript, arrays always use numbered indexes.
 */
+
+let pc1 = {
+    name: "HP",
+    ram: "8GB",
+    cpu: "i5",
+    hdd: "1TB"
+};
+
+// Create a frase that will be written in the document
+let frase = "My PC is a " + pc1.name + " with " + pc1.ram + " of RAM, " + pc1.cpu + " processor and " + pc1.hdd + " of HDD.";
+document.write(frase + "<br>");
