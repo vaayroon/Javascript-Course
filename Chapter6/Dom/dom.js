@@ -116,3 +116,71 @@ h1.setAttribute("lang", "en"); // Sets the language of the element's content to 
 // Set spellcheck
 h1.setAttribute("spellcheck", "true"); // Turns on spell checking for the element
 h1.setAttribute("tabIndex", "2"); // Sets the tab order of an element
+
+
+/* Inputs Attributes
+    - accept
+    - alt
+    - autocomplete
+    - autofocus
+    - checked
+    - dirname
+    - disabled
+    - form
+    - formaction
+    - formenctype
+    - formmethod
+    - formnovalidate
+    - formtarget
+    - height
+    - list
+    - max
+    - maxlength
+    - min
+    - multiple
+    - name
+    - pattern
+    - placeholder
+    - readonly
+    - required
+    - size
+    - src
+    - step
+    - type
+    - value
+    - width
+*/
+
+let input = document.getElementById("inputTestId");
+let inputFile = document.getElementById("inputFileTestId");
+input.type = "number"; // Sets the input type to x
+input.value = "sasasa"; // Sets the value of the input field to x
+
+inputFile.accept = "image/jpg"; // Sets the file types that the server accepts (only for type="file")
+
+/* form: Specifies the form the element belongs to
+    - formaction: Specifies where to send the form-data when a form is submitted. Only for type="submit"
+    - formenctype: Specifies how form-data should be encoded before sending it to a server. Only for type="submit"
+    - formmethod: Specifies how to send the form-data (which HTTP method to use). Only for type="submit"
+    - formnovalidate: Specifies that the form-data should not be validated on submission. Only for type="submit"
+    - formtarget: Specifies where to display the response after submitting the form. Only for type="submit"
+*/
+
+// formaction
+let input2 = document.getElementById("inputSubmitTestId");
+input2.type = "submit";
+input2.formaction = "https://www.google.com";
+input2.setAttribute("formaction", "https://www.google.com");
+input2.setAttribute("form", "formTestId");
+// using querySelector select the form with id formTestId and then the first input element
+let inputForm = document.querySelector("#formTestId input");
+inputForm.setAttribute("minlength", "5"); // Sets the minimum length of text in an input field to x
+inputForm.setAttribute("maxlength", "10"); // Sets the maximum length of text in an input field to x
+inputForm.required = true; // Sets the width of an input field to x characters
+
+/* Style attribute: Sets or returns the value of the style attribute of an element
+    Here we dont user underscore, we use camelCase
+*/
+
+inputForm.style.backgroundColor = "#081"; // Sets the background color of an element to red
+inputForm.style.color = "#fff"; // Sets the background color of an element to red
